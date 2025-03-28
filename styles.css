@@ -1,0 +1,376 @@
+/* General Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f7a400;
+    color: white;
+}
+
+.header .logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.header .navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .navigation ul li {
+    margin: 0 15px;
+}
+
+.header .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header .navigation ul li a:hover {
+    color: #f7a400;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.hero .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f7a400;
+}
+
+.hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f7a400;
+}
+
+.hero .cta-btn {
+    background-color: #f7a400;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background-color: #333;
+}
+
+/* Products Section */
+.product-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    transition: transform 0.3s ease;
+}
+
+.product-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #f7a400;
+}
+
+.product-card .buy-btn button {
+    background-color: #f7a400;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card .buy-btn button:hover {
+    background-color: #333;
+}
+
+/* Hover effects */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p:last-child {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact .input-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact .input-group input,
+.contact .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .input-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact button {
+    background-color: #f7a400;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #333;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer .social-media a:hover {
+    color: #f7a400;
+}
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navigation ul li {
+        margin: 10px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-cards {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact .input-group {
+        max-width: 100%;
+    }
+
+    .contact button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero .cta-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .product-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+}
